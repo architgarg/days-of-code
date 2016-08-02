@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Day9{
+public class Solution {
 
     int result;
 
@@ -13,11 +13,11 @@ public class Day9{
         System.out.println(dp.factorial(N));
     }
 
-    public  int factorial (int num){
-        if(num == 0){
+    public  int factorial (int num) {
+        if (num == 0) {
             return 1;
-        }else{
-            result = num * factorial(num-1);
+        } else {
+            result = num * factorial(num - 1);
             return result;
         }
     }

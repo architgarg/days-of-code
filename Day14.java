@@ -19,7 +19,7 @@ class Difference {
         maximumDifference = (elements[(elements.length) - 1]) - (elements[0]);
         return maximumDifference;
     }
-} 
+}
 
 public class Solution {
 

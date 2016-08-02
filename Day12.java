@@ -17,8 +17,8 @@ class Person {
     // Print person data
     public void printPerson() {
         System.out.println(
-                "Name: " + lastName + ", " + firstName
-                + "\nID: " + idNumber);
+            "Name: " + lastName + ", " + firstName
+            + "\nID: " + idNumber);
     }
 
 }
@@ -37,23 +37,23 @@ class Student extends Person {
         int sum = 0;
         int average = 0 ;
         char result = 'T';
-        
+
         for (int i = 0; i < testScores.length; i++) {
             sum = sum + testScores[i];
         }
-        average = (sum/ (testScores.length));
-        
-        if (average >=90 && average <= 100){
+        average = (sum / (testScores.length));
+
+        if (average >= 90 && average <= 100) {
             result = 'O';
-        }else if(average >=80 && average <= 90){
+        } else if (average >= 80 && average <= 90) {
             result = 'E';
-        }else if(average >=70 && average <= 80){
+        } else if (average >= 70 && average <= 80) {
             result = 'A';
-        }else if(average >=55 && average <= 70){
+        } else if (average >= 55 && average <= 70) {
             result = 'P';
-        }else if(average >=40 && average <= 55){
+        } else if (average >= 40 && average <= 55) {
             result = 'D';
-        }else if(average <= 40){
+        } else if (average <= 40) {
             result = 'T';
         }
         return result;
